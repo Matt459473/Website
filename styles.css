@@ -1,0 +1,37 @@
+h1 {
+
+	color: #FF8B06;
+	text-align: left;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font: Comic Sans ms
+}
+
+
+p1 {
+	
+	color: #33FF33;
+	text-align: left;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font: Comic Sans ms;
+	font-size: 30px;
+	
+}
+
+h2 {
+	
+	color: #33FF33;
+	text-align: left;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font: Comic Sans ms
+	font-size: 50px;
+	
+}
+
+a {
+	color: #FF8B06;
+	text-align: left;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font: Comic Sans ms
+	font-size: 50px;
+	
+}
