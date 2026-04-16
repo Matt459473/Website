@@ -1,0 +1,123 @@
+<html>
+
+<head>
+
+<title> Quizzing  </title>
+<link rel="stylesheet" href="quizstyles.css">
+</head>
+
+<body>
+<h1> Welcome to the Quizzing section </h1>
+
+<a href="O:\Year 12\Computer science\Website\networkingiscool.htm">Back to main page</a>
+
+<p></p>
+
+<form>
+<p1>Question 1: What is a Local Area Network?</p1>
+<div>
+<input type="radio" id="answer1" name="answer" value="answer1">
+<label for="answer1">A local area network (LAN) is a map of the local area and all of the internet providers available within
+ </label><br>
+ </div>
+ 
+ <p></p>
+ 
+<div2>
+<input type="radio" id="answer2" name="answer" value="answer2">
+<label for="answer2">A local area network (LAN) is a computer network that interconnects computers within a limited area
+ such as a residence, campus, or building,and has its network equipment and interconnects locally managed.
+ LANs facilitate the distribution of data and sharing network devices, such as printers.
+ </label><br>
+</div2>
+ 
+  <p></p>
+ 
+ <div3>
+<input type="radio" id="answer3" name="answer" value="answer3">
+<label for="answer3">A local area network (LAN) is a software that provides a biography to Jake's life
+ </label><br>
+ </div3>
+ <p></p>
+ 
+<button type="button" onclick="checkSelection()"> Check Answer </button>
+<p></p>
+<div id="result" style="color:green; font-size:18px; font-weight:bold;">
+</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<!second question
+
+
+
+<p2>Question 2: What is a bus topology?</p2>
+<div>
+<input type="radio" id="answer4" name="answer2" value="answer1">
+<label for="answer1">A bus topology is a network where all nodes are connected via the same central cable referred to as the "backbon" or "bus"
+ </label><br>
+ </div>
+ 
+ <p></p>
+ 
+<div2>
+<input type="radio" id="answer5" name="answer2" value="answer2">
+<label for="answer2">A bus topology is a network that is hosted on a vw bus
+ </label><br>
+</div2>
+ 
+  <p></p>
+ 
+ <div3>
+<input type="radio" id="answer6" name="answer2" value="answer3">
+<label for="answer3">A bus topology is a network where every node has a connection to every other node, this is very expensive
+ </label><br>
+ </div3>
+ <p></p>
+ 
+<button type="button" onclick="checkSelection2()"> Check Answer </button>
+ 
+</form>
+
+
+
+<div id="result2" style="color:green; font-size:18px; font-weight:bold;">
+</div>
+
+<script>
+        function checkSelection() {
+            const result = document.getElementById("result");
+
+            if (document.getElementById("answer1").checked) {
+                result.innerHTML = "You are a failure";
+            } else if (document.getElementById("answer2").checked) {
+                result.innerHTML = "You are a great success";
+            } else if (document.getElementById("answer3").checked) {
+                result.innerHTML = "You are a failure";
+            } else {
+                result.innerHTML = "Please select an answer first.";
+            }
+        }
+		
+		
+		function checkSelection2() {
+            const result = document.getElementById("result2");
+
+            if (document.getElementById("answer4").checked) {
+                result.innerHTML = "You are a great success";
+            } else if (document.getElementById("answer5").checked) {
+                result.innerHTML = "You are a failure";
+            } else if (document.getElementById("answer6").checked) {
+                result.innerHTML = "You are a failure";
+            } else {
+                result.innerHTML = "Please select an answer first.";
+            }
+        }
+    </script>
+
+
+<body>
+
+
+</html>
