@@ -78,40 +78,158 @@
  
 <button type="button" onclick="checkSelection2()"> Check Answer </button>
  
-</form>
-
+<p></p>
 
 
 <div id="result2" style="color:green; font-size:18px; font-weight:bold;">
 </div>
 
+
+<!third question
+
+<p3>Question 3: What is a start topology </p3>
+<div>
+<input type="radio" id="answer7" name="answer3" value="answer1">
+<label for="answer1">A star topology uses power from the starts to enable data to be transferred across nodes
+ </label><br>
+ </div>
+ 
+ <p></p>
+ 
+<div2>
+<input type="radio" id="answer8" name="answer3" value="answer2">
+<label for="answer2">A star topology uses 1 cable that connects every node on the network 
+ </label><br>
+</div2>
+ 
+  <p></p>
+ 
+ <div3>
+<input type="radio" id="answer9" name="answer3" value="answer3">
+<label for="answer3">A star topology is a topology that connects nodes using a cenral connection point such as a switch, each node has a connection to the switch
+ </label><br>
+ </div3>
+ <p></p>
+ 
+<button type="button" onclick="checkSelection3()"> Check Answer </button>
+ 
+ 
+ <div id="result3" style="color:green; font-size:18px; font-weight:bold;">
+</div>
+
+
+
+
+
+<!fourth question
+
+<p3>Question 4: What is an IP address </p3>
+<div>
+<input type="radio" id="answer10" name="answer4" value="answer1">
+<label for="answer1">An IP address is the address of all of the internet personalities (IP)
+ </label><br>
+ </div>
+ 
+ <p></p>
+ 
+<div2>
+<input type="radio" id="answer11" name="answer4" value="answer2">
+<label for="answer2">An ip address is the address used to find your devices on the local network for LAN and your LAN on the WAN each one is unique in the format xxx.xxx.xxx.xxx
+ </label><br>
+</div2>
+ 
+  <p></p>
+ 
+ <div3>
+<input type="radio" id="answer12" name="answer4" value="answer3">
+<label for="answer3">An IP address is the value assigned to your wireless devices to identify them uniquely, it will not change
+ </label><br>
+ </div3>
+ <p></p>
+ 
+<button type="button" onclick="checkSelection4()"> Check Answer </button>
+ 
+ <div id="result4" style="color:green; font-size:18px; font-weight:bold;">
+</div>
+
+</form>
+
+<p></p>
+
+
+
 <script>
         function checkSelection() {
-            const result = document.getElementById("result");
+            const result1 = document.getElementById("result");
 
             if (document.getElementById("answer1").checked) {
-                result.innerHTML = "You are a failure";
+                result1.innerHTML = "You are a failure";
+				result1.style.color="red"
             } else if (document.getElementById("answer2").checked) {
-                result.innerHTML = "You are a great success";
+                result1.innerHTML = "You are a great success";
+				result1.style.color="green"
             } else if (document.getElementById("answer3").checked) {
-                result.innerHTML = "You are a failure";
+                result1.innerHTML = "You are a failure";
+				result1.style.color="red"
             } else {
-                result.innerHTML = "Please select an answer first.";
+                result1.innerHTML = "Please select an answer first.";
             }
         }
 		
 		
 		function checkSelection2() {
-            const result = document.getElementById("result2");
+            const result2 = document.getElementById("result2");
 
             if (document.getElementById("answer4").checked) {
-                result.innerHTML = "You are a great success";
+                result2.innerHTML = "You are a great success";
+				result2.style.color="green"
             } else if (document.getElementById("answer5").checked) {
-                result.innerHTML = "You are a failure";
+                result2.innerHTML = "You are a failure";
+				result2.style.color="red"
             } else if (document.getElementById("answer6").checked) {
-                result.innerHTML = "You are a failure";
+                result2.innerHTML = "You are a failure";
+				result2.style.color="red"
             } else {
-                result.innerHTML = "Please select an answer first.";
+                result2.innerHTML = "Please select an answer first.";
+            }
+        }
+		
+		
+		function checkSelection3() {
+            const result3 = document.getElementById("result3");
+			
+
+            if (document.getElementById("answer7").checked) {
+                result3.innerHTML = "You are a failure";
+				result3.style.color="red"
+				
+            } else if (document.getElementById("answer8").checked) {
+                result3.innerHTML = "You are a failure";
+				result3.style.color="red"
+            } else if (document.getElementById("answer9").checked) {
+                result3.innerHTML = "You are a great success";
+				result3.style.color="green"
+            } else {
+                result3.innerHTML = "Please select an answer first.";
+            }
+        }
+		
+		function checkSelection4() {
+            const result4 = document.getElementById("result4");
+			
+
+            if (document.getElementById("answer10").checked) {
+                result4.innerHTML = "You are a failure";
+				result4.style.color="red"
+				
+            } else if (document.getElementById("answer11").checked) {
+                result4.innerHTML = "You are a great success";
+				result4.style.color="green"
+            } else if (document.getElementById("answer12").checked) {
+                result4.innerHTML = "You are a failure";
+				result4.style.color="red"
+            } else {
+                result4.innerHTML = "Please select an answer first.";
             }
         }
     </script>
